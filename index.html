@@ -1,0 +1,43 @@
+<link type="text/css" rel="stylesheet" href="/dp.SyntaxHighlighter/Styles/SyntaxHighlighter.css"></link>
+
+<script class="javascript" src="/dp.SyntaxHighlighter/Scripts/shCore.js"></script>
+<script class="javascript" src="/dp.SyntaxHighlighter/Scripts/shBrushCSharp.js"></script>
+<script class="javascript" src="/dp.SyntaxHighlighter/Scripts/shBrushPhp.js"></script>
+<script class="javascript" src="/dp.SyntaxHighlighter/Scripts/shBrushJScript.js"></script>
+<script class="javascript" src="/dp.SyntaxHighlighter/Scripts/shBrushJava.js"></script>
+<script class="javascript" src="/dp.SyntaxHighlighter/Scripts/shBrushVb.js"></script>
+<script class="javascript" src="/dp.SyntaxHighlighter/Scripts/shBrushSql.js"></script>
+<script class="javascript" src="/dp.SyntaxHighlighter/Scripts/shBrushXml.js"></script>
+<script class="javascript" src="/dp.SyntaxHighlighter/Scripts/shBrushDelphi.js"></script>
+<script class="javascript" src="/dp.SyntaxHighlighter/Scripts/shBrushPython.js"></script>
+<script class="javascript" src="/dp.SyntaxHighlighter/Scripts/shBrushRuby.js"></script>
+<script class="javascript" src="/dp.SyntaxHighlighter/Scripts/shBrushCss.js"></script>
+<script class="javascript" src="/dp.SyntaxHighlighter/Scripts/shBrushCpp.js"></script>
+<script class="javascript">
+  var file_ext = window.location.href.replace(/^.+\.(.+?)($|\?.*)/i,"$1");
+  var file_lang = null;
+  switch(file_ext) {
+  case "c": file_lang = "c"; break;
+  case "h": file_lang = "c"; break;
+  case "cpp": file_lang = "c"; break;
+  case "css": file_lang = "css"; break;
+  case "java": file_lang = "java"; break;
+  case "js": file_lang = "js"; break;
+  case "php": file_lang = "php"; break;
+  case "py": file_lang = "python"; break;
+  case "rb": file_lang = "ruby"; break;
+  case "pp": file_lang = "ruby"; break;
+  case "vb": file_lang = "vb"; break;
+  case "xml": file_lang = "xml"; break;
+  case "html": file_lang = "xml"; break;
+  default: file_lang = "python";
+  }
+  document.getElementById('code').className = file_lang;
+  //alert(file_lang);
+
+  if(window.isBloggerMode == true)
+    dp.SyntaxHighlighter.BloggerMode();
+
+    dp.SyntaxHighlighter.ClipboardSwf = '/dp.SyntaxHighlighter/Scripts/clipboard.swf';
+    dp.SyntaxHighlighter.HighlightAll('code');
+  </script>
