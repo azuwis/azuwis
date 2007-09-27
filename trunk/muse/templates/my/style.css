@@ -1,0 +1,309 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+a, a:link, a:visited, a:active {
+   text-decoration: none;
+   color: #339933;
+}
+
+h1, h2, h3, h4 {
+   padding: 0.5em 1em 0.5em 1em;
+   color: #685950;
+   font-family: Georgia, serif;
+}
+
+h1 {
+   padding-left: 0.5em;
+   font-size: 200%;
+}
+
+h2 {
+   padding-left: 1em;
+   font-size: 160%;
+}
+
+h3 {
+   padding-left: 1.5em;
+   font-size: 140%;
+}
+
+h4 {
+   padding-left: 2em;
+   font-size: 120%;
+}
+
+img {
+   border: 0;
+}
+
+.float-right {
+   position: relative;
+   float: right;
+   margin: 0.5em;
+   margin-right: 0;
+}
+
+.float-left {
+   position: relative;
+   float: left;
+   margin: 0.5em;
+   margin-left: 0;
+}
+
+.super {
+   font-size: 70%;
+   vertical-align: baseline;
+   position: relative;
+   bottom: 0.33em;
+}
+
+.sub {
+   font-size: 70%;
+   vertical-align: baseline;
+   position: relative;
+   bottom: -0.25em;
+}
+
+html {
+}
+
+body {
+   background: #eee;
+   font-family: Lucida Grande, Verdana, sans-serif;
+}
+
+#xcontainer {
+   min-width: 24em;
+   max-width: 60em;
+   margin: 0em auto 1em;
+}
+
+#top-menu {
+   font-size: 1em;
+   padding-bottom: 0.2em;
+   border: 1px solid #aaa;
+   border-top: 0;
+   background: #ddd;
+   text-align: right;
+}
+
+#top-menu ul {
+   list-style-type: none;
+   display: inline;
+}
+
+#top-menu ul li {
+   margin: 0.3em 0.5em 0em 1em;
+   display: inline;
+}
+
+#top-menu ul li a {
+   color: #666;
+   font-weight: bold;
+   text-shadow: #fff 1px 1px 3px;
+}
+
+#top-menu ul li a:hover {
+   color: #333;
+}
+
+#header {
+   position: relative;
+   height: 111px;
+}
+
+#header #logo {
+   position: absolute;
+   background: url(logo.png) 0 0 no-repeat;
+   top: -20px;
+   left: 0px;
+   width: 200px;
+   height: 131px;
+}
+
+#header #name {
+   display: block;
+   background: url(fvom.png) top right no-repeat;
+   height: 111px;
+}
+
+/* #header h1 { */
+/*    padding-top: 20px; */
+/*    padding-left: 120px; */
+/*    font-family: Garamond, Georgia, sans; */
+/*    font-size: 400%; */
+/*    color: #999; */
+/* } */
+
+#container {
+   background: #fff;
+   padding: 0px;
+   border: 1px solid #aaa;
+}
+
+#bread {
+   background: #ddd;
+   text-align: center;
+   color: #333;
+   border-bottom: 1px solid #aaa;
+}
+
+#backlinks {
+   float: right;
+   background: #ddd;
+   color: #333;
+   border-bottom: 1px solid #aaa;
+   border-left: 1px solid #aaa;
+   margin-top: -1px;
+}
+
+#backlinks ul li {
+   margin: 0.1em 1em 0.1em 20px;
+   font-size: 90%;
+   color: #333;
+   list-style-image: url(backto.gif);
+}
+
+#contents {
+   padding: 10px;
+}
+
+#footer {
+   text-align: center;
+   color: #999;
+   font-size: 60%;
+   margin-top: 0.3em;
+}
+
+#footer a {
+   border: 1px solid #999;
+   padding: 0 0.2em 0 0.2em;
+   color: #999;
+}
+
+#lastchange {
+   padding: 0 0.3em 0 0.3em;
+   display: inline;
+/*    float: right; */
+   background: #ddd;
+   color: #333;
+   border-top: 1px solid #aaa;
+   border-right: 1px solid #aaa;
+   font-size: 90%;
+}
+
+img.latex-inline {
+   vertical-align: middle;
+}
+
+.comment {
+   font-size: 90%;
+   color: #666;
+   margin: 1em 2em 1em 2em;
+}
+
+/* FIXME: rename 'contents' here to 'main' or so */
+#contents ul li {
+   margin: 0.4em 1em 0.4em 1.5em;
+   list-style-type: circle;
+}
+
+#contents p {
+   padding-top: 0.5em;
+   padding-bottom: 0.5em;
+}
+
+#contents h2, #contents h3 {
+   text-shadow: #ccc 1px 1px 2px;
+}
+
+pre.src {
+   font-size: 90%;
+   padding: 0.3em;
+   background: #f5f5f5 url(paw.png) top right no-repeat;
+   border: 1px solid #eee;
+   overflow-x: auto;
+}
+
+div.contents {
+   padding: 0.3em 1em 0.3em 0;
+   color: #333;
+}
+
+div.contents dl dt {
+   margin-left: 2em;
+   font-family: Georgia, sans;
+   font-size: 100%;
+   display: list-item;
+   list-style-image: url(backto.gif);
+}
+
+div.contents dl dd {
+   margin-left: 1em;
+   font-size: 90%;
+}
+
+/** BLOG RELATED **/
+div.entry {
+   clear: both;
+}
+
+div.entry-body {
+   margin-bottom: 30px;
+}
+
+div.entry-head {
+/*    border-bottom: 1px solid #999; */
+}
+
+div.entry-date {
+   float: right;
+   display: block;
+   text-align: center;
+   border: 1px solid #999;
+   padding: 0 0.3em 0 0.3em;
+   margin-top: 0.5em;
+   background: #ddd;
+}
+
+div.entry-date span.date {
+   white-space: pre;
+   font-size: 160%;
+   font-family: Georgia, serif;
+   color: 685950;
+   text-shadow: #999 1px 1px 2px;
+}
+
+div.entry-title {
+   text-align: left;
+   border-bottom: 1px solid #999;
+   margin: 0;
+   padding: 0;
+}
+
+div.entry-title  h2 {
+   padding: 0;
+   border: none
+}
+
+div.entry-text {
+   margin-top: 0; 
+   margin-left: 2em;
+   margin-right: 1em;
+   clear: both;
+}
+
+div.entry-qotd {
+   float: right;
+   max-width: 40%;
+   margin: 0 -10px 0.3em 1em;
+   border-left: 1px solid #ccc;
+   border-bottom: 1px solid #ccc;
+   padding: 0 1em 0 1em;
+   color: #999;
+   font-size: 90%;
+   text-align: right;
+   clear: left;
+}
