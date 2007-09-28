@@ -211,8 +211,13 @@ img.latex-inline {
 }
 
 #contents p {
+   text-indent: 2em;
    padding-top: 0.5em;
    padding-bottom: 0.5em;
+}
+
+.entry-qotd p {
+   text-indent: 0em !important;
 }
 
 #contents h2, #contents h3 {
